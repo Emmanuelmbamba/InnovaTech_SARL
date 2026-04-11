@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnovaTech SARL - Services</title>
+    <link rel="stylesheet" href="global-design.css">
+
+    
+</head>
+<body>
+
+    <!-- NAVBAR FIXED -->
+    <nav id="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="log1.jpeg" alt="Logo InnovaTech">
+                InnovaTech SARL
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="solution.html">Solutions</a></li>
+            <li><a href="formation.html">Formations</a></li>
+            <li><a href="service.html" class="active">Services</a></li>
+            <li><a href="about.html">A Propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html" style="color: var(--accent); border: 1px solid var(--accent); padding: 5px 15px;">Connexion</a></li>
+        </ul>
+        <div class="hamburger" id="hamburgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <main class="page-container animate-on-scroll is-visible">
+        <section class="section-header">
+            <h1 class="section-title">Nos <span class="text-gradient-primary">Services</span> Professionnels</h1>
+            <p class="section-subtitle">
+                InnovaTech accompagne les entreprises publiques et privées dans leur transformation digitale avec des solutions innovantes et performantes.
+            </p>
+            <div style="margin-top: 30px;">
+                <a href="inscription.html" class="btn-primary">
+                    <span class="material-icons">how_to_reg</span> S'inscrire
+                </a>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section style="margin-bottom: 80px;">
+            <h2 class="section-title" style="font-size: 2rem; text-align: center;">Ce que nous offrons</h2>
+            <div class="service-grid">
+                <div class="glass-container service-card">
+                    <h3><span class="material-icons">web</span> Développement</h3>
+                    <p>Conception de sites web professionnels, plateformes de gestion et applications modernes adaptées aux besoins locaux et internationaux.</p>
+                </div>
+
+                <div class="glass-container service-card">
+                    <h3><span class="material-icons">router</span> Administration Réseau</h3>
+                    <p>Installation, sécurisation et maintenance des infrastructures réseaux pour assurer performance et continuité des services vitaux.</p>
+                </div>
+
+                <div class="glass-container service-card">
+                    <h3><span class="material-icons">cell_tower</span> Transmission Télécom</h3>
+                    <p><strong>NOC & Back Office</strong> : Surveillance 24/24, gestion des liens, configuration des équipements et optimisation des réseaux télécoms.</p>
+                </div>
+
+                <div class="glass-container service-card">
+                    <h3><span class="material-icons">corporate_fare</span> Digitalisation</h3>
+                    <p>Centralisation des fonctionnalités administratives pour améliorer la gestion interne et la performance des entreprises publiques.</p>
+                </div>
+
+                <div class="glass-container service-card">
+                    <h3><span class="material-icons">school</span> Formation IT</h3>
+                    <p>Programmes spécialisés en développement web, bases de données, cybersécurité et administration réseau pour tous les niveaux.</p>
+                </div>
+
+                <div class="glass-container service-card">
+                    <h3><span class="material-icons">support_agent</span> Consulting IT</h3>
+                    <p>Accompagnement stratégique pour optimiser vos processus technologiques et intégrer des solutions hardware ou logicielles avancées.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROCESS -->
+        <section class="glass-container" style="text-align: center; margin-bottom: 80px;">
+            <h2 class="section-title" style="font-size: 2rem; margin-bottom: 0;">Notre Processus</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <h4>1. Analyse</h4>
+                    <p>Étude approfondie de vos besoins techniques et de vos objectifs.</p>
+                </div>
+                <div class="step">
+                    <h4>2. Planification</h4>
+                    <p>Définition d'une stratégie adaptée et budgétisation du projet.</p>
+                </div>
+                <div class="step">
+                    <h4>3. Déploiement</h4>
+                    <p>Mise en œuvre technique rapide, tests et intégration réseau/serveur.</p>
+                </div>
+                <div class="step">
+                    <h4>4. Support</h4>
+                    <p>Assistance continue, monitoring 24/7 et optimisation continue.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section-header" style="margin-bottom: 40px;">
+            <h2 class="section-title" style="font-size: 2rem;">Discutons de votre projet</h2>
+            <p style="margin-bottom: 30px; color: var(--text-muted);">Prêt à entamer votre transformation digitale ?</p>
+            <a href="contact.html" class="btn-glass">Demander un devis</a>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div>
+            &copy; 2026 InnovaTech SARL - Excellence Digitale Internationale.
+        </div>
+        <div>
+            <a href="contact.html">Nous Contacter</a> | 
+            <a href="about.html">A Propos</a>
+        </div>
+    </footer>
+
+    <script src="script-animations.js"></script>
+    <script>
+        // Navbar scrolled effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
