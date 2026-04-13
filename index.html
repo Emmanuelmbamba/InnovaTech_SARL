@@ -44,6 +44,7 @@
                     class="text-gradient-primary">Internationale</span></h1>
             <p style="text-align: justify;">InnovaTech accompagne les entreprises publiques et privées vers l'excellence technologique. Sécurité,
                 développement, réseaux.</p>
+            <div class="menu">
             <a href="service.html" class="btn-primary">
                 <span class="material-icons">explore</span> Découvrir nos services
             </a>
@@ -51,6 +52,21 @@
                 Espace Client
             </a>
         </div>
+        <style>
+                .menu {
+                     display: flex;
+                     gap: 20px;
+                     justify-content: center;
+                    }
+
+                    /* Pour téléphone */
+                    @media (max-width: 600px) {
+                    .menu {
+                    flex-direction: column;
+                    gap: 25px;
+                        }
+                    }
+        </style>
     </section>
 
     <!-- SLIDER SECTION -->
